@@ -1,27 +1,23 @@
-# FirstAngularApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Some Advantages of Angular-JS
+1. With the help of Angular you can write Declarative code. ( Define the Target-UI states and how they change, and let Angular do the REST).
+ == With the help of Vanila-Js I need to write Imperative code where I need to write code for each and every instructions that needs to be executed by the browser. == (Just for the sake of knowledge purpose)
+2. Angular allows you to seperate concerns with the help of components. ( Components are custom HTML-Elements).
+3. The Root component is placed inside the bootstrap application. 
+## 4. Decorators are used to add meta-data to the things they are attached to. Example : Component Decorator.
+   The Component Decorator is used to add meta-data to the classes.
+   Some important attributes of Component Decorator
+   	Selector == This Tells Angular which Elements of the Screen are controlled by this Component.
+   	templateUrl == It contains the markup for that component ( value is generally the path of the file ).
+5. So we export a class/component using export keyword so that we can use that class in other classes.
+6. Components are created as classes. You instantiate the custom-html elements. But its Angular that instantiates
+   the classes in the end. 
+7. You Try Building a Component Tree in this way.
+ 				
+ 					            App Component
+ 					                 |
+ 					                 |
+ 	----------------------------------------------------------------------------
+   |                                |                                           |
+   Header Component           User Component                                 Tasks Component
+   																				|
+   																			 Task Component 
